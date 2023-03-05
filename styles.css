@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  /* ================== Colors ================== */
+
+  --Soft-blue: hsla(215, 51%, 70%, 0.85);
+  --Cyan: hsl(178, 100%, 50%);
+
+  /* ================== Neutral ================== */
+
+  --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: var(--Very-dark-blue-main-BG);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border-radius: 1rem;
+  width: 400px;
+  background-color: var(--Very-dark-blue-card-BG);
+  margin: 3rem 1rem;
+}
+
+.card-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card-top {
+  object-fit: cover;
+  height: 100%;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.card-top img {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.card-bottom h1 {
+  color: var(--White);
+  padding: 1rem 0;
+}
+
+.card-bottom p {
+  color: var(--Soft-blue);
+  padding: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.card-bottom .price-time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-bottom .price-time .price {
+  color: var(--Cyan);
+  display: flex;
+  align-items: center;
+}
+
+.card-bottom .price-time .price img {
+  padding: 0.5rem;
+}
+
+.card-bottom .price-time .time {
+  color: var(--Cyan);
+  display: flex;
+  align-items: center;
+}
+
+.card-bottom .price-time .time img {
+  padding: 0.5rem;
+}
+
+.attribution .divider {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 2px solid var(--Very-dark-blue-line);
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0 0 0;
+}
+
+.creator img {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 2rem;
+}
+
+.creator p {
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+.creator a {
+  color: var(--White);
+  text-decoration: none;
+}
